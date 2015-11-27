@@ -4,4 +4,5 @@
 | ([java-gravity-ping-pong](https://github.com/dmitrynikol/java-gravity-ping-pong))
 
 * `Для того чтобы понимать как строятся пользовательские события мы будем использовать стиль Model-Binder-View`: [article_15](http://www.spring-source.ru/articles.php?type=manual&theme=articles&docs=article_15)
+
 ![05.png](05.png)
