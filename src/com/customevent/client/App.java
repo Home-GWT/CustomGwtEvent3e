@@ -27,11 +27,13 @@ public class App implements EntryPoint {
 		checker.addSmileReceivedEventHandler(widget);
 		checker.newSmileReceived();
 		
+		RootPanel.get().add(widget);
+		
+		
 //		SimpleEventBus eventBus = new SimpleEventBus();
 //		SmileReceiver receiverSmile = new SmileReceiver(eventBus);
 //		eventBus.fireEvent(new SmileReceivedEvent("Smile today and everyday! ^__^"));
 		
-		RootPanel.get().add(widget);
 //		RootPanel.get().add(receiverSmile);
 	}
 	
