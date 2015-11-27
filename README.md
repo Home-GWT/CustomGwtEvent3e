@@ -9,3 +9,6 @@
 
 * `Alex Tretyakov Blog ** Основы GWT Event Bus`: [osnovy-raboty-s-gwt-eventbus.html](http://alextretyakov.blogspot.com/2011/11/osnovy-raboty-s-gwt-eventbus.html) ([Contacts3](https://github.com/Home-GWT/Contacts3/tree/develop))
 * `Alex Tretyakov Blog ** Используем Listener вместо GWT Event Bus`: [ispolzuem-listener-vmesto-event-bus.html](http://alextretyakov.blogspot.com/2012/01/ispolzuem-listener-vmesto-event-bus.html)
+
+
+>[OVirt-engine-Webadmin-2012-10.pdf](https://www.ovirt.org/images/5/50/OVirt-engine-Webadmin-2012-10.pdf)
