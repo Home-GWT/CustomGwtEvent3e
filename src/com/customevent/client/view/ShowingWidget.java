@@ -1,16 +1,15 @@
 package com.customevent.client.view;
 
-import com.customevent.client.events.ReceivedEvent;
-import com.customevent.client.events.ReceivedEventHandler;
-import com.google.gwt.user.client.ui.Label;
+import com.customevent.client.events.*;
+import com.google.gwt.user.client.ui.*;
 
 /**
- *  Класс является компонентом который получает событие и отображает пожелания
+ *  Класс (<виджет>) является компонентом который получает событие и отображает пожелания
  */
-public class ShowingWidget extends Label implements ReceivedEventHandler {
+public class ShowingWidget extends Label implements MyEventHandler {
 	
 	@Override
-	public void onSmileReceived(ReceivedEvent event) {
+	public void onSmileReceived(My1Event event) {
 		this.setText(event.getSmile());
 	}
 	

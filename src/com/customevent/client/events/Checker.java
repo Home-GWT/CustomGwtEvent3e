@@ -14,26 +14,31 @@ public class Checker implements HasHandlers {
 	
 	private HandlerManager handlerManager;
 	
-	public Checker() {
+	public Checker(){
 		handlerManager = new HandlerManager(this);
 	}
 
 	/**
-	 * method responsible for sending events
+	 * #2
+	 * выбрасываем событие
 	 */
 	@Override
-	public void fireEvent(GwtEvent<?> event) {
+	public void fireEvent(GwtEvent<?> event){
 		handlerManager.fireEvent(event);
 	}
 	
 	/**
-	 * used by event receivers to register themselves as interested in receiving events.
+	 * #1
+	 * добавляю/регистрирую подписчиков (обработчиков-события)
+	 * *******************************************************
+	 * каждый обработчик события должен поддерживать тип (интерфейс) события...
+	 * (на 1-тип (интерфейс) события можно повесить много обработчиков события)
 	 */
-	public HandlerRegistration addSmileReceivedEventHandler(ReceivedEventHandler eventHandler) {
-		return handlerManager.addHandler(ReceivedEvent.TYPE, eventHandler);
+	public HandlerRegistration addSmileReceivedEventHandler(MyEventHandler eventHandler){
+		return handlerManager.addHandler(My1Event.TYPE, eventHandler);
 	}
 	
-	public void newSmileReceived() {
-		fireEvent(new ReceivedEvent("This SMILE is just for you :-)"));
+	public void newSmileReceived(){
+		fireEvent(new My1Event("This SMILE is just for you :-)"));
 	}
 }
