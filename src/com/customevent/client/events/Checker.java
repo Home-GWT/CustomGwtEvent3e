@@ -6,15 +6,15 @@ import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.event.shared.HasHandlers;
 
 /**
- * @author Dmitry Nikolaenko
- *
- * Class responsible for checking wishes
+ * Класс отвечает за проверку пожеланий
+ * ************************************
+ * Класс отправитель событий должен реализовать интерфейс 'HasHandlers'
  */
-public class SmileChecker implements HasHandlers {
+public class Checker implements HasHandlers {
 	
 	private HandlerManager handlerManager;
 	
-	public SmileChecker() {
+	public Checker() {
 		handlerManager = new HandlerManager(this);
 	}
 
@@ -29,11 +29,11 @@ public class SmileChecker implements HasHandlers {
 	/**
 	 * used by event receivers to register themselves as interested in receiving events.
 	 */
-	public HandlerRegistration addSmileReceivedEventHandler(SmileReceivedEventHandler eventHandler) {
-		return handlerManager.addHandler(SmileReceivedEvent.TYPE, eventHandler);
+	public HandlerRegistration addSmileReceivedEventHandler(ReceivedEventHandler eventHandler) {
+		return handlerManager.addHandler(ReceivedEvent.TYPE, eventHandler);
 	}
 	
 	public void newSmileReceived() {
-		fireEvent(new SmileReceivedEvent("This SMILE is just for you :-)"));
+		fireEvent(new ReceivedEvent("This SMILE is just for you :-)"));
 	}
 }
