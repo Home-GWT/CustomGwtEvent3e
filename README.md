@@ -7,4 +7,4 @@
 
 ![05.png](05.png)
 
-* `Alex Tretyakov Blog ** Основы GWT Event Bus`: [osnovy-raboty-s-gwt-eventbus.html](http://alextretyakov.blogspot.com/2011/11/osnovy-raboty-s-gwt-eventbus.html)
+* `Alex Tretyakov Blog ** Основы GWT Event Bus`: [osnovy-raboty-s-gwt-eventbus.html](http://alextretyakov.blogspot.com/2011/11/osnovy-raboty-s-gwt-eventbus.html) ([Contacts3](https://github.com/Home-GWT/Contacts3/tree/develop))
